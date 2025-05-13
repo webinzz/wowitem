@@ -1,0 +1,49 @@
+/* Style untuk scrollbar di Chrome, Safari, dan Edge */
+::-webkit-scrollbar {
+  width: 0px; /* Lebar scrollbar */
+}
+
+
+    *{
+        font-family: "Poppins", system-ui;
+    }
+
+    .title{
+        font-family: "Bellefair", serif;
+        letter-spacing: 2px;
+    }
+    .hover{
+        transition: 0.5s;
+      }
+      
+      .hover:after {
+        content: '»';
+        font-size: 40px;
+        position: absolute;
+        opacity: 0;  
+        top: -11px;
+        right: 0;
+        transition: 0.5s;
+      }
+      
+      .hover:hover{
+        padding-right: 30px;
+        padding-left:8px;
+      }
+      
+      .hover:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+      .btn{
+        background: linear-gradient(to right, white  50%, white 50%);
+        background-size: 200% 100%;
+        background-position: left;
+        border: none;
+        border-radius: 5px;
+        transition: background-position 0.5s ease;
+      }
+      .btn:hover {
+        background-position: right;
+        
+      }

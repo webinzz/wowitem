@@ -1,0 +1,1 @@
+<li class="list-none relative"><a {{ $attributes->merge(['class'=>'hover hover:bg-background hover:text-slate-400 px-7 duration-500 text-white  flex items-center p-2 py-3  gap-2 ']) }} ><span class="material-symbols-outlined">{{ $slot }}</span> {{ $name }}</a></li>

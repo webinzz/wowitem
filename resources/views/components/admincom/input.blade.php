@@ -1,0 +1,1 @@
+<input {{ $attributes }} required class="w-full py-2 px-3 my-2 border rounded border-text focus:border-blue-800 focus:outline-none">
