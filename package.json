@@ -15,5 +15,6 @@
     },
     "dependencies": {
         "flowbite": "^2.5.1"
-    }
+    },
+    "engines": { "node": "18.x" }
 }
