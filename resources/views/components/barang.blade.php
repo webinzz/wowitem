@@ -11,6 +11,14 @@ $images = [
     "guitar.png",
     "racket.png",
     "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
+    "corner.png",
 ];
 @endphp
 
