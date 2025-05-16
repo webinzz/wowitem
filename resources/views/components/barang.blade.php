@@ -1,30 +1,9 @@
 @props(['data'])
-@php
-$images = [
-    "laptop.png",
-    "mouse.png",
-    "laptop-acer.png",
-    "camera.png",
-    "voly-ball.png",
-    "basket-ball.png",
-    "skipping.png",
-    "guitar.png",
-    "racket.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-];
-@endphp
+
 
 <div {{ $attributes }} class="bg-white shadow-lg  rounded-sm  sm:col-span-3 h-80 lg:col-span-2 col-span-6 w-full p-4 mb-2 items-start">
     <figure class="min-w-52 mb-2 h-48  p-4 bg-background  overflow-hidden group">
-        <img src="{{ asset('gambar/'. $images[$data->id_item - 1]) }}" class="object-contain h-full w-full group-hover:scale-110 transition-all object-center"  alt="">
+        <img src="{{ asset('storage/'. $data->image ) }}" class="object-contain h-full w-full group-hover:scale-110 transition-all object-center"  alt="">
     </figure>
     
     <div class="flex w-full justify-between items-center ">

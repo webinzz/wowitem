@@ -1,30 +1,9 @@
 @props(['data'])
-@php
-$images = [
-    "laptop.png",
-    "mouse.png",
-    "laptop-acer.png",
-    "camera.png",
-    "voly-ball.png",
-    "basket-ball.png",
-    "skipping.png",
-    "guitar.png",
-    "racket.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-    "corner.png",
-];
-@endphp
+
 <div {{ $attributes->merge(["class"=>"bg-white shadow-lg mb-2 lg:col-span-1 col-span-2 p-4 flex gap-5 items-start"]) }}>
 
     <figure class="group max-w-44 min-w-44 sm:min-w-52 sm:max-w-52 h-52 bg-background border overflow-hidden" >
-        <img src="{{ asset('gambar/'. $images[$data->id_item - 1]) }}" class="object-contain h-full w-full group-hover:scale-110 transition-all object-center"  alt="">
+        <img src="{{ asset(storage/'. $data->image) }}" class="object-contain h-full w-full group-hover:scale-110 transition-all object-center"  alt="">
     </figure>
 
     <div class="flex flex-col min-h-52 justify-between w-full">
